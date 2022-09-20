@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="commons-cli-1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/lib/commons-cli-1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/httpcore5-5.1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/httpcore5-h2-5.1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/httpcore5-reactive-5.1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/httpcore5-testing-5.1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/reactive-streams-1.0.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/rxjava-2.2.8.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/slf4j-api-1.7.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
