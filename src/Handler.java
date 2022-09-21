@@ -43,9 +43,14 @@ public class Handler implements HttpHandler {
                 while (rs.next()) {
                     results.add(new Tax(rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getFloat(6)));
                 }
-                Collections.sort(results, new ResultComparator());
-                jsonResponse = "{ \"rate\": " + results.get(0).rate + " }";
-                httpExchange.sendResponseHeaders(200, jsonResponse.length());
+                if (results.isEmpty()) {
+                    jsonResponse = "{\"message\":\"Not found.\"}";
+                    httpExchange.sendResponseHeaders(404, jsonResponse.length());
+                } else {
+                    Collections.sort(results, new ResultComparator());
+                    jsonResponse = "{ \"rate\": " + results.get(0).rate + " }";
+                    httpExchange.sendResponseHeaders(200, jsonResponse.length());
+                }
             }
             con.close();
         } catch(Exception e){
